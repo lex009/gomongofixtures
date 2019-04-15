@@ -1,4 +1,4 @@
-package gomongofixture
+package gomongofixtures
 
 import (
 	"context"

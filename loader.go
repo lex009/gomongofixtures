@@ -8,7 +8,7 @@
 // 	}); err != nil {
 // 		panic(err)
 // 	}
-package gomongofixture
+package gomongofixtures
 
 import (
 	"context"
