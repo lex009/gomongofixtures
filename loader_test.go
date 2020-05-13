@@ -6,9 +6,8 @@ import (
 	"testing"
 	"time"
 
+	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
-	"gopkg.in/mgo.v2/bson"
-
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
@@ -16,7 +15,7 @@ import (
 var uri = func() string {
 	uri := os.Getenv("MONGODB_URI")
 	if uri == "" {
-		uri = "localhost:27017"
+		uri = "mongodb://localhost:27017"
 	}
 
 	return uri
